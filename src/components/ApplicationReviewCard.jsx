@@ -35,7 +35,7 @@ const ApplicationReviewCard = ({
     setApplications(newApplications);
 
     await axios.put(
-      `http://localhost:8080/api/v1/applications/${application.id}`,
+      `https://api.helpinghopedale.org/api/v1/applications/${application.id}`,
       newApplication
     );
   };

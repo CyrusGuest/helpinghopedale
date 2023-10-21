@@ -83,7 +83,7 @@ const ApplicationWindow = ({ opportunity, setApplying }) => {
 
     try {
       const result = await axios.post(
-        "https://api.platepals.org/api/v1/apply",
+        "https://api.helpinghopedale.org/api/v1/apply",
         formData
       );
 

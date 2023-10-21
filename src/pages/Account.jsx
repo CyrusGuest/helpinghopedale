@@ -30,7 +30,7 @@ const Account = () => {
         setLoading(true);
 
         const res = await axios.get(
-          `https://api.platepals.org/api/v1/applications?userId=${User.sub}`
+          `https://api.helpinghopedale.org/api/v1/applications?userId=${User.sub}`
         );
         setApplications(res.data);
       } catch (err) {

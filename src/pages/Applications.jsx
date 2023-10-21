@@ -27,7 +27,7 @@ const Applications = () => {
         setLoading(true);
 
         const res = await axios.get(
-          `http://localhost:8080/api/v1/listings/${listingId}/applications`
+          `https://api.helpinghopedale.org/api/v1/listings/${listingId}/applications`
         );
         setApplications(res.data);
       } catch (err) {

@@ -20,7 +20,7 @@ const AppProvider = ({ children }) => {
         // Otherwise, clear the token from local storage
         try {
           const result = await axios.post(
-            "https://api.platepals.org/api/v1/verify_token",
+            "https://api.helpinghopedale.org/api/v1/verify_token",
             { token }
           );
 

@@ -53,7 +53,7 @@ const ConfirmationComp = () => {
     if (!confirmation) {
       try {
         const response = await axios.post(
-          "http://localhost:8080/api/v1/reset_password",
+          "https://api.helpinghopedale.org/api/v1/reset_password",
           { email } // Note: Make sure the email is sent as an object
         );
 
@@ -89,7 +89,7 @@ const ConfirmationComp = () => {
     } else {
       try {
         const response = await axios.post(
-          "http://localhost:8080/api/v1/confirm_reset_password",
+          "https://api.helpinghopedale.org/api/v1/confirm_reset_password",
           { email, confirmationCode, newPassword } // Note: Send necessary data as an object
         );
 

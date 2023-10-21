@@ -35,7 +35,7 @@ const CreateListingWindow = ({ setCreating }) => {
 
     try {
       const result = await axios.post(
-        "https://api.platepals.org/api/v1/opportunities",
+        "https://api.helpinghopedale.org/api/v1/opportunities",
         opportunity
       );
 

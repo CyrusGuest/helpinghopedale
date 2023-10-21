@@ -173,8 +173,6 @@ app.get("/api/v1/opportunities", async (req, res) => {
   let latitude;
   let longitude;
 
-  console.log(lastEvaluatedKey);
-
   if (searchLocation !== "" && searchLocation !== undefined) {
     const apiKey = "AIzaSyAELzQedRkBkX8gYQZYjMg9dMqDmph_9MM";
 
@@ -572,5 +570,7 @@ app.post("/api/v1/confirm_reset_password", async (req, res) => {
     res.send({ statusCode: 400, error: error.message });
   }
 });
+
+app.get("/api/v1/health_check", async (req, res) => {});
 
 app.listen(8080, () => console.log("server listening on port 8080"));

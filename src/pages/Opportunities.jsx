@@ -24,7 +24,7 @@ const Opportunities = () => {
         return;
       setLoading(true);
       const res = await axios.get(
-        "http://localhost:8080/api/v1/opportunities",
+        "https://api.helpinghopedale.org/api/v1/opportunities",
         { params: { lastEvaluatedKey, limit: 9 } } // Assuming a limit of 9 items per page
       );
       setOpportunities((prevOpportunities) => [
