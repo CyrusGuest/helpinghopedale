@@ -4,7 +4,7 @@ import MainGraphic from "../images/landinggraphic.jpg";
 
 const LandingGraphic = () => {
   return (
-    <div className="mb-36 mt-20 md:mt-28 lg:mt-60 flex flex-col-reverse lg:flex-row-reverse gap-8">
+    <div className="mb-36 mt-20 md:mt-28 lg:mt-40 flex flex-col-reverse lg:flex-row-reverse gap-8">
       <div className="lg:mr-20 flex flex-col justify-center items-center">
         <h1 className="text-center text-4xl md:text-5xl font-bold">
           Welcome to Helping Hopedale!

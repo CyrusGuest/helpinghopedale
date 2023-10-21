@@ -44,7 +44,7 @@ const ExploreGraphic = () => {
       </div>
 
       <img
-        className="mx-auto w-3/5 lg:w-2/5 mb-10 max-w-4xl lg:mb-40 object-cover lg:ml-16"
+        className="mx-auto w-3/5 lg:w-2/5 mb-10 max-w-md lg:mb-40 object-cover lg:mr-1/2"
         src={ExploreGraphicImg}
         alt=""
       />

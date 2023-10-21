@@ -9,10 +9,7 @@ import { toast } from "react-toastify";
 import Loading from "../components/Loading";
 import JobAttribute from "../components/JobAttribute";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowCircleLeft,
-  faShareAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowCircleLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Opportunity from "../components/Opportunity";
 import Search from "../components/Search";
@@ -99,9 +96,9 @@ const OpportunityPage = () => {
         ""
       )}
       <div className={MobileNavOpen || applying ? "opacity-50" : "opacity-100"}>
+        <Navbar />
+        <hr className="md:hidden" />
         <div className="hidden md:block">
-          <Navbar />
-
           <Search
             setLoading={setLoading}
             setOpportunities={setOpportunities}
@@ -114,7 +111,7 @@ const OpportunityPage = () => {
             <Loading />
           </div>
         ) : (
-          <div className="flex md:px-10 max-w-7xl mx-auto mt-12">
+          <div className="flex md:px-10 max-w-7xl mx-auto mt-8 md:12">
             <div className="lg:flex mx-auto flex-col max-w-xl hidden">
               {opportunities.length > 0 ? (
                 opportunities.map((opportunity) => (
@@ -133,14 +130,7 @@ const OpportunityPage = () => {
                 <Link to="/opportunities" className="mr-auto">
                   <FontAwesomeIcon
                     icon={faArrowCircleLeft}
-                    className="text-primary text-4xl cursor-pointer"
-                  />
-                </Link>
-
-                <Link to="/" className="float-right">
-                  <FontAwesomeIcon
-                    icon={faShareAlt}
-                    className="text-4xl text-primary"
+                    className="text-primary text-5xl md:text-4xl cursor-pointer"
                   />
                 </Link>
               </div>
