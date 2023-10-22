@@ -13,32 +13,31 @@ const LandingGraphic = () => {
         <div className="max-w-xs md:max-w-2xl mt-4">
           <p className="text-center mx-auto mt-2 md:mt-6 md:text-xl">
             <span className="font-bold">
-              Welcome to Helping Hopedale, the bridge between goodwill and
-              community support.
+              Helping Hopedale - Connecting Volunteers and Community Needs
             </span>{" "}
-            We're on a mission to connect passionate volunteers with
-            organizations and individuals in Hopedale and surrounding
-            communities, creating a strong network of care across our region.
-            Helping Hopedale is more than a platform - it's a movement towards a
-            world where everyone has access to support and assistance.
+            We're here to bridge the gap between those who want to make a
+            difference and those who need a helping hand in Hopedale and
+            surrounding communities. Whether you're seeking volunteers or
+            looking to volunteer, Helping Hopedale is your platform to create
+            positive change.
           </p>
 
           <p className="text-center mx-auto mt-2 md:mt-6 md:text-xl">
-            <span className=" font-bold">Join us to make a difference.</span> By
-            volunteering through Helping Hopedale, you're not just giving your
-            time; you're making a positive impact in the lives of our neighbors,
-            supporting local communities, and building a stronger community
-            together. Let's work together to create a better future for all.
+            <span className=" font-bold">Make an Impact Today!</span> If you
+            could use some help, create listings for volunteer opportunities,
+            share your needs, and connect with dedicated individuals eager to
+            help. If you're an individual with a heart for volunteering, explore
+            our listings and join hands with your neighbors to build a stronger
+            community together.
           </p>
 
           <p className="text-center mx-auto mt-2 md:mt-6 md:text-xl">
             <span className=" font-bold">
-              Together, we are Helping Hopedale - connecting hearts and building
-              communities.
+              Together, We Strengthen Hopedale and Beyond.
             </span>{" "}
-            Because in the effort to make our community stronger, every helping
-            hand makes a world of difference. Connect with us today, and let's
-            create a brighter, more supportive future for Hopedale and beyond.
+            Every helping hand counts, and your involvement can make a world of
+            difference. Join our community today, and let's build a brighter,
+            more supportive future for Hopedale and its neighbors.
           </p>
         </div>
 
@@ -46,7 +45,7 @@ const LandingGraphic = () => {
           to="/opportunities"
           className="text-center btn xxw-72 font-bold bg-white text-black rounded-lg shadow-lg glow-on-hover mt-10 text-2xl mx-auto"
         >
-          Learn More
+          Explore Opportunities
         </Link>
       </div>
 
