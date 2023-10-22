@@ -18,8 +18,8 @@ import ApplicationPage from "./pages/ApplicationPage";
 
 function App() {
   return (
-    <AppProvider>
-      <Router>
+    <Router>
+      <AppProvider>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/mission" element={<Mission />} />
@@ -66,8 +66,8 @@ function App() {
           />
         </Routes>
         <ToastContainer />
-      </Router>
-    </AppProvider>
+      </AppProvider>
+    </Router>
   );
 }
 

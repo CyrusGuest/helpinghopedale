@@ -1,12 +1,14 @@
 import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 export const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
   const [User, setUser] = useState({});
   const [MobileNavOpen, setMobileNavOpen] = useState(false);
+  const navigate = useNavigate();
 
   let verifiedToken = false;
 
@@ -43,6 +45,8 @@ const AppProvider = ({ children }) => {
               name: result.data.user[3].Value,
               email: result.data.user[4].Value,
             });
+
+            navigate("/opportunities");
           }
         } catch (error) {
           console.error(error);
